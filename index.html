@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfectionist Detailing — Премиальный детейлинг в Омске</title>
+  <meta name="description" content="Perfectionist Detailing — премиальный детейлинг в Омске. Полировка кузова, керамическое покрытие, химчистка салона. Эстетика, доведённая до совершенства." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header id="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Perfectionist<span>Detailing</span></a>
+      <nav class="menu" id="menu">
+        <a href="#services">Услуги</a>
+        <a href="#projects">Проекты</a>
+        <a href="#about">О студии</a>
+        <a href="#contacts">Контакты</a>
+        <button class="btn btn-primary" data-open-modal>
+          Записаться
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <!-- ВОТ ОНО, ФОНОВОЕ ВИДЕО -->
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+           poster="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1920&auto=format&fit=crop">
+      <!-- Сюда вставляешь путь к своему видео -->
+      <source src="hero.mp4"
+              type="video/mp4" media="(min-width: 768px)">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Premium Detailing — Omsk</span>
+        <h1>
+          <span class="line"><span class="line-inner">Твой автомобиль.</span></span>
+          <span class="line"><span class="line-inner"><em>Твои правила.</em></span></span>
+        </h1>
+        <p class="lead">Профессиональный детейлинг, безупречный блеск и защита, которую видно с первого взгляда.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">
+            Выбрать услугу
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#projects" class="btn btn-outline">Смотреть проекты</a>
+        </div>
+        <p class="hero-note">Perfectionist Detailing — эстетика, доведённая до совершенства</p>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span class="marquee-item">Полировка кузова</span>
+        <span class="marquee-item">Керамическое покрытие</span>
+        <span class="marquee-item">Химчистка салона</span>
+        <span class="marquee-item">Защита ЛКП</span>
+        <span class="marquee-item">Детейлинг премиум</span>
+      </div>
+      <div class="marquee-group">
+        <span class="marquee-item">Полировка кузова</span>
+        <span class="marquee-item">Керамическое покрытие</span>
+        <span class="marquee-item">Химчистка салона</span>
+        <span class="marquee-item">Защита ЛКП</span>
+        <span class="marquee-item">Детейлинг премиум</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FEATURES (ИКОНКИ) ================= -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        
+        <div class="feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/>
+            </svg>
+          </div>
+          <h3>Премиальные материалы</h3>
+          <p>Химия и составы ведущих мировых брендов — только проверенные решения.</p>
+        </div>
+        
+        <div class="feature reveal delay-1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4"/><path d="M4 21v-2a6 6 0 016-6h4a6 6 0 016 6v2"/>
+            </svg>
+          </div>
+          <h3>Опытные мастера</h3>
+          <p>Специалисты с многолетним опытом работы с премиальным автопарком.</p>
+        </div>
+        
+        <div class="feature reveal delay-1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>
+            </svg>
+          </div>
+          <h3>Внимание к деталям</h3>
+          <p>Обрабатываем каждый миллиметр кузова, салона и колёсных дисков.</p>
+        </div>
+        
+        <div class="feature reveal delay-2">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 000-7.8z"/>
+            </svg>
+          </div>
+          <h3>Индивидуальный подход</h3>
+          <p>Программа ухода подбирается под ваш автомобиль, стиль и задачи.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES (УСЛУГИ) ================= -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Услуги</span>
+        <h2>Искусство <em>детейлинга</em></h2>
+        <p>Полный спектр работ: от комплексной мойки до керамической защиты кузова. Каждая услуга — отдельный ритуал.</p>
+      </div>
+      <div class="services-grid">
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="moika.jpg" alt="Комплексная мойка" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Комплексная мойка</h3>
+            <p>Деликатная ручная мойка кузова, дисков и стёкол с использованием безопасной химии и техники двух ведер.</p>
+            <div class="card-foot">
+              <span class="price">от ___ ₽</span>
+              <a href="#" class="card-link" data-open-modal>Подробнее
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal delay-1">
+          <div class="card-img">
+            <img src="salon.jpg" alt="Химчистка салона" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Химчистка салона</h3>
+            <p>Глубокая очистка всех поверхностей салона с восстановлением свежести, текстуры и первоначального вида.</p>
+            <div class="card-foot">
+              <span class="price">от ___ ₽</span>
+              <a href="#" class="card-link" data-open-modal>Подробнее
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="polirovka.jpg" alt="Полировка кузова" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Полировка кузова</h3>
+            <p>Устранение царапин и голограмм, возвращение глубины цвета и зеркального блеска лакокрасочного покрытия.</p>
+            <div class="card-foot">
+              <span class="price">от ___ ₽</span>
+              <a href="#" class="card-link" data-open-modal>Подробнее
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal delay-1">
+          <div class="card-img">
+            <img src="poliafob.jpg" alt="Керамическое покрытие" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Керамическое покрытие</h3>
+            <p>Долговременная защита ЛКП с гидрофобным эффектом, стойким глянцем и защитой от внешних воздействий.</p>
+            <div class="card-foot">
+              <span class="price">от ___ ₽</span>
+              <a href="#" class="card-link" data-open-modal>Подробнее
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="gallery-section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Проекты</span>
+        <h2>Наши работы. <em>Наш стиль.</em></h2>
+        <p>Галерея проектов студии. Замените изображения на реальные фотографии ваших работ.</p>
+      </div>
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">Все работы</button>
+        <button class="filter-btn" data-filter="polish">Полировка</button>
+        <button class="filter-btn" data-filter="clean">Химчистка</button>
+        <button class="filter-btn" data-filter="protect">Защита кузова</button>
+      </div>
+      
+      <div class="gallery-grid" id="gallery">
+        <div class="g-item reveal" data-cat="polish">
+          <img src="polir.jpg" alt="Полировка" loading="lazy">
+          <span class="label">Полировка</span>
+        </div>
+        <div class="g-item reveal delay-1" data-cat="clean">
+          <img src="him.jpg" alt="Химчистка" loading="lazy">
+          <span class="label">Химчистка</span>
+        </div>
+        <div class="g-item reveal delay-2" data-cat="protect">
+          <img src="def1.jpg" alt="Защита кузова" loading="lazy">
+          <span class="label">Защита кузова</span>
+        </div>
+        <div class="g-item reveal" data-cat="polish">
+          <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=1000&auto=format&fit=crop" alt="Полировка" loading="lazy">
+          <span class="label">Полировка</span>
+        </div>
+        <div class="g-item reveal delay-1" data-cat="clean">
+          <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop" alt="Химчистка" loading="lazy">
+          <span class="label">Химчистка</span>
+        </div>
+        <div class="g-item reveal delay-2" data-cat="protect">
+          <img src="https://images.unsplash.com/photo-1622185135505-2d795003994a?q=80&w=1000&auto=format&fit=crop" alt="Защита" loading="lazy">
+          <span class="label">Защита кузова</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1000&auto=format&fit=crop" alt="Студия детейлинга" loading="lazy">
+          <div class="badge">
+            <div class="badge-num" data-count="7">0</div>
+            <div class="badge-txt">лет опыта в премиум-детейлинге</div>
+          </div>
+        </div>
+        <div class="about-text reveal delay-1">
+          <span class="section-label">О студии</span>
+          <h2>Детейлинг — это больше, чем чистота. Это <em>характер, стиль и уважение</em> к своему автомобилю.</h2>
+          <p>Perfectionist Detailing — студия, где каждая деталь имеет значение. Мы возвращаем автомобилям глубину цвета, безупречную геометрию поверхностей и ощущение нового — то, что знакомо каждому владельцу.</p>
+          <p>Наша философия проста: если результат нельзя назвать идеальным — работа не закончена. Мы используем премиальные материалы, контролируем каждый этап и относимся к каждому автомобилю как к проекту, а не как к заказу.</p>
+          <div class="stats">
+            <div>
+              <div class="stat-num" data-count="1200">0</div>
+              <div class="stat-lbl">Автомобилей обработано</div>
+            </div>
+            <div>
+              <div class="stat-num" data-count="98">0</div>
+              <div class="stat-lbl">% довольных клиентов</div>
+            </div>
+            <div>
+              <div class="stat-num" data-count="15">0</div>
+              <div class="stat-lbl">Видов услуг</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Отзывы</span>
+        <h2>Что говорят <em>клиенты</em></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review reveal">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+          </div>
+          <p class="review-text">«Керамика держится уже полтора года — машина как новая. Вода скатывается, грязь не прилипает. Результат превзошёл ожидания.»</p>
+          <div class="review-author">
+            <div class="review-avatar">АК</div>
+            <div>
+              <div class="review-name">Александр К.</div>
+              <div class="review-car">BMW M5 · Керамика</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review reveal delay-1">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+          </div>
+          <p class="review-text">«Забирал машину — не мог поверить, что это мой салон. Химчистка вытащила пятна, которые я считал навсегда впитавшимися.»</p>
+          <div class="review-author">
+            <div class="review-avatar">МЛ</div>
+            <div>
+              <div class="review-name">Мария Л.</div>
+              <div class="review-car">Mercedes GLE · Химчистка</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review reveal delay-2">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+          </div>
+          <p class="review-text">«Полировка убрала паутинку полностью. Цвет стал глубже, машина выглядит дороже, чем при покупке. Сервис на уровне.»</p>
+          <div class="review-author">
+            <div class="review-avatar">ДС</div>
+            <div>
+              <div class="review-name">Дмитрий С.</div>
+              <div class="review-car">Porsche Macan · Полировка</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ================= FAQ ================= -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Вопросы</span>
+        <h2>Часто <em>спрашивают</em></h2>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>Сколько времени занимает полировка кузова?</summary>
+          <div class="faq-answer"><p>В зависимости от состояния ЛКП и выбранного пакета — от 4 до 12 часов. Стандартная полировка занимает один рабочий день.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Что такое керамическое покрытие и зачем оно нужно?</summary>
+          <div class="faq-answer"><p>Керамика — это защитный полимерный слой, который наносится на кузов. Он создаёт гидрофобный эффект, защищает от царапин, УФ и реагентов. Срок службы — от 1 до 5 лет.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Можно ли записаться на выходные?</summary>
+          <div class="faq-answer"><p>Да, студия работает по выходным. Рекомендуем записываться заранее.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Даёте ли гарантию на работы?</summary>
+          <div class="faq-answer"><p>Да. На все услуги предоставляется гарантия. На керамические покрытия — гарантия от производителя состава.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="reveal">Готов <em>выделяться?</em></h2>
+      <p class="reveal delay-1">Запишитесь на детейлинг — и уже скоро ваш автомобиль будет выглядеть так, как должен.</p>
+      <button class="btn btn-primary reveal delay-2" data-open-modal>
+        Записаться на детейлинг
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= MAP ================= -->
+  <section class="map-section" id="map">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Как нас найти</span>
+        <h2>Мы <em>рядом</em></h2>
+        <p>[Укажите адрес студии] · г. Омск</p>
+      </div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=73.368212%2C54.989342&z=15&pt=73.368212,54.989342,pm2rdm"
+        width="100%" height="520" frameborder="0" allowfullscreen="true" loading="lazy" title="Карта">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo">Perfectionist<span>Detailing</span></div>
+          <p class="brand-txt">Премиальный детейлинг в Омске. Эстетика, доведённая до совершенства.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="tel:+70000000000">[укажите телефон]</a>
+          <a href="mailto:info@example.com">[укажите e-mail]</a>
+          <a href="https://t.me/your_channel" target="_blank" rel="noopener">Telegram</a>
+        </div>
+        <div class="footer-col">
+          <h4>Адрес</h4>
+          <p>[укажите адрес студии]</p>
+          <p>г. Омск</p>
+        </div>
+        <div class="footer-col">
+          <h4>График работы</h4>
+          <p>Пн–Пт: [часы]</p>
+          <p>Сб–Вс: [часы]</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Perfectionist Detailing. Все права защищены.</span>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING ACTIONS ================= -->
+  <div class="floating-actions">
+    <a href="https://t.me/your_channel" target="_blank" rel="noopener" class="fab fab-telegram" aria-label="Telegram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </a>
+    <button class="fab fab-top" id="scrollTop" aria-label="Наверх">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ================= MOBILE CTA ================= -->
+  <div class="mobile-cta" id="mobileCta">
+    <button class="btn btn-primary" data-open-modal>
+      Записаться на детейлинг
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img src="" alt="Просмотр" id="lightboxImg">
+  </div>
+
+  <!-- ================= MODAL (Форма) ================= -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="formWrap">
+        <h3>Запись на детейлинг</h3>
+        <p class="sub">Заполните форму — мы свяжемся с вами для подтверждения записи.</p>
+        <form id="bookingForm" novalidate>
+          <div class="field" data-field>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+            <div class="err">Пожалуйста, укажите имя</div>
+          </div>
+          <div class="field" data-field>
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" inputmode="tel" autocomplete="tel" maxlength="18" required>
+            <div class="err">Укажите корректный номер телефона</div>
+          </div>
+          <div class="field" data-field>
+            <label for="car">Автомобиль</label>
+            <input type="text" id="car" name="car" placeholder="Марка и модель" autocomplete="off" required>
+            <div class="err">Укажите автомобиль</div>
+          </div>
+          <div class="field" data-field>
+            <label for="service">Услуга</label>
+            <select id="service" name="service" required>
+              <option value="">Выберите услугу</option>
+              <option>Комплексная мойка</option>
+              <option>Химчистка салона</option>
+              <option>Полировка кузова</option>
+              <option>Керамическое покрытие</option>
+              <option>Другое</option>
+            </select>
+            <div class="err">Выберите услугу</div>
+          </div>
+          <div class="field" data-field>
+            <label for="date">Желаемая дата</label>
+            <input type="date" id="date" name="date" required>
+            <div class="err">Выберите дату</div>
+          </div>
+          <div class="field" data-field>
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" placeholder="Дополнительные пожелания (необязательно)"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;justify-content:center;margin-top:24px;padding:20px">
+  <span id="submitText">Отправить заявку</span>
+  <svg id="submitIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</button>
+        </form>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <div class="check">
+          <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h4>Заявка отправлена</h4>
+        <p>Спасибо! Мы свяжемся с вами в ближайшее время для подтверждения записи.</p>
+        <p class="demo-note">Демо-режим · реальная отправка не настроена</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
